@@ -14,6 +14,7 @@ public class ModItems {
     public static final Item CHAMELEON_EGG = registerItem("chameleon_egg", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
+        ChameleonMod.LOGGER.info("Registering " + name + " !");
         return Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
     }
 
