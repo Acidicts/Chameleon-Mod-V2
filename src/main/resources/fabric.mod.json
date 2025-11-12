@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chameleon-mod",
+	"version": "${version}",
+	"name": "Chameleon Mod",
+	"description": "Chameleon... Revised, Remastered, also... Hi",
+	"authors": [
+		"Acidicts"
+	],
+	"contact": {
+		"homepage": "https://github.com/Acidicts/",
+		"sources": "https://github.com/Acidicts/"
+	},
+	"license": "MIT",
+	"icon": "assets/chameleon-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.acidicts.chameleon.ChameleonMod"
+		],
+		"fabric-datagen": [
+			"net.acidicts.chameleon.ChameleonModDataGenerator"
+		],
+        "client": [
+            "net.acidicts.chameleon.ChameleonModClient"
+        ]
+    },
+	"mixins": [
+		"chameleon-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
