@@ -13,11 +13,14 @@ public class ChameleonMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        // Start of mod initialization
+
 		LOGGER.info("Initialising " + MOD_ID + " !");
         LOGGER.info(MOD_INFO);
 
         ModItems.registerItems();
 
+        // End of mod initialization
         LOGGER.info(MOD_ID + " Initialized!");
 	}
 }

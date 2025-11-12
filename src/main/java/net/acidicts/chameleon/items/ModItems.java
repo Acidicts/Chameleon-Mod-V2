@@ -6,16 +6,40 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
 
     public static final Item CHAMELEON = registerItem("chameleon", new Item(new Item.Settings()));
     public static final Item CHAMELEON_EGG = registerItem("chameleon_egg", new Item(new Item.Settings()));
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
-        ChameleonMod.LOGGER.info("Registering " + name + " !");
-        return Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
+        Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
+
+        String translationKey = "item." + ChameleonMod.MOD_ID + "." + name;
+        String translatedName = Text.translatable(translationKey).getString();
+
+        if (translatedName.equals(translationKey)) {
+            translatedName = formatRegistryName(name);
+        }
+
+        ChameleonMod.LOGGER.info("Registering {} !", translatedName);
+        return registeredItem;
+    }
+
+    private static String formatRegistryName(String name) {
+        String[] words = name.split("_");
+        StringBuilder formatted = new StringBuilder();
+        for (String word : words) {
+            if (!formatted.isEmpty()) {
+                formatted.append(" ");
+            }
+            formatted.append(Character.toUpperCase(word.charAt(0)))
+                     .append(word.substring(1));
+        }
+        return formatted.toString();
     }
 
     public static void registerItems() {
@@ -23,5 +47,6 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.add(CHAMELEON));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.add(CHAMELEON_EGG));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(STEEL_INGOT));
     }
 }
