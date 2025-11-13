@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "category": "misc",
+  "key" : {
+    "C" : {"item" : "minecraft:egg"},
+    "#" : {"item" : "minecraft:jungle_sapling"}
+  },
+  "pattern" : [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "result" : {
+    "id": "chameleon_mod:chameleon_egg",
+    "count": 1
+  }
+}

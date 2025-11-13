@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "chameleon-mod",
+	"id": "chameleon_mod",
 	"version": "${version}",
 	"name": "Chameleon Mod",
 	"description": "Chameleon... Revised, Remastered, also... Hi",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Acidicts/"
 	},
 	"license": "MIT",
-	"icon": "assets/chameleon-mod/icon.png",
+	"icon": "assets/chameleon_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,7 @@
         ]
     },
 	"mixins": [
-		"chameleon-mod.mixins.json"
+		"chameleon_mod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",

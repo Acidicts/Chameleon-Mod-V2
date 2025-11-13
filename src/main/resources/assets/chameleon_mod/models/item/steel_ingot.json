@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chameleon-mod:item/chameleon_egg"
+    "layer0": "chameleon_mod:item/steel_ingot"
   }
 }
