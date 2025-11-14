@@ -16,7 +16,7 @@ import static net.acidicts.chameleon.items.ModItems.formatRegistryName;
 public class ModBlocks {
 
     public static final Block INCUBATOR = registerBlock("incubator",
-            new Incubator(AbstractBlock.Settings.create().nonOpaque()));
+            new Incubator(AbstractBlock.Settings.create().nonOpaque().requiresTool().strength(4f).resistance(12f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
