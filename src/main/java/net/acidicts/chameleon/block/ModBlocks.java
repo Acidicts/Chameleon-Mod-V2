@@ -8,7 +8,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 
@@ -17,8 +16,7 @@ import static net.acidicts.chameleon.items.ModItems.formatRegistryName;
 public class ModBlocks {
 
     public static final Block INCUBATOR = registerBlock("incubator",
-            new Incubator(AbstractBlock.Settings.create().nonOpaque().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.METAL)));
+            new Incubator(AbstractBlock.Settings.create().nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

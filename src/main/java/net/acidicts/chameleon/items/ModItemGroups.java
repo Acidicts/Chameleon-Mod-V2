@@ -1,6 +1,7 @@
 package net.acidicts.chameleon.items;
 
 import net.acidicts.chameleon.ChameleonMod;
+import net.acidicts.chameleon.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CHAMELEON_EGG);
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);
+                        entries.add(ModBlocks.INCUBATOR);
                     })
                     .build());
 
