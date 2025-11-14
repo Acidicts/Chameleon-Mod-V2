@@ -1,5 +1,6 @@
 package net.acidicts.chameleon;
 
+import net.acidicts.chameleon.block.ModBlocks;
 import net.acidicts.chameleon.items.ModItemGroups;
 import net.acidicts.chameleon.items.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,16 +15,13 @@ public class ChameleonMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        // Start of mod initialization
-
 		LOGGER.info("Initialising " + MOD_ID + " !");
         LOGGER.info(MOD_INFO);
 
-
         ModItemGroups.registerItemGroups();
         ModItems.registerItems();
+        ModBlocks.registerBlocks();
 
-        // End of mod initialization
         LOGGER.info(MOD_ID + " Initialized!");
 	}
 }

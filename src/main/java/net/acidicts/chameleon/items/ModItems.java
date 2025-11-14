@@ -30,7 +30,7 @@ public class ModItems {
         return registeredItem;
     }
 
-    private static String formatRegistryName(String name) {
+    public static String formatRegistryName(String name) {
         String[] words = name.split("_");
         StringBuilder formatted = new StringBuilder();
         for (String word : words) {

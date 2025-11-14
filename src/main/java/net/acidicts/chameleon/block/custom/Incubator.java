@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class Incubator extends HorizontalFacingBlock {
     public static final MapCodec<Incubator> CODEC = createCodec(Incubator::new);
 
-    protected Incubator(Settings settings) {
+    public Incubator(Settings settings) {
         super(settings);
     }
 
@@ -27,7 +27,7 @@ public class Incubator extends HorizontalFacingBlock {
     }
 
     @Override
-    public void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 }
