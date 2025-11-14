@@ -2,6 +2,7 @@ package net.acidicts.chameleon;
 
 import net.acidicts.chameleon.block.ModBlocks;
 import net.acidicts.chameleon.block.entity.ModBlockEntities;
+import net.acidicts.chameleon.entity.ModEntities;
 import net.acidicts.chameleon.item.ModItemGroups;
 import net.acidicts.chameleon.item.ModItems;
 import net.acidicts.chameleon.screen.ModScreenHandlers;
@@ -27,6 +28,8 @@ public class ChameleonMod implements ModInitializer {
 
         ModBlockEntities.registerBlockEntities();
         ModScreenHandlers.registerScreenHandlers();
+
+        ModEntities.registerEntities();
 
         LOGGER.info(MOD_ID + " Initialized!");
 

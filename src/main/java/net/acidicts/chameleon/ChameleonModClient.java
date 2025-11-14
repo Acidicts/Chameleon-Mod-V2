@@ -1,5 +1,6 @@
 package net.acidicts.chameleon;
 
+import net.acidicts.chameleon.entity.ModEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.acidicts.chameleon.screen.ModScreenHandlers;
@@ -9,5 +10,7 @@ public class ChameleonModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HandledScreens.register(ModScreenHandlers.INCUBATOR_SCREEN_HANDLER, IncubatorScreen::new);
+
+        ModEntities.doEntityRegistries();
     }
 }

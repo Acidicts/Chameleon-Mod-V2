@@ -1,9 +1,11 @@
 package net.acidicts.chameleon.item;
 
 import net.acidicts.chameleon.ChameleonMod;
+import net.acidicts.chameleon.entity.ModEntities;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -15,6 +17,7 @@ public class ModItems {
     public static final Item CHAMELEON_EGG = registerItem("chameleon_egg", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_DUST = registerItem("steel_dust", new Item(new Item.Settings()));
+    public static final Item CHAMELEON_SPAWN_EGG = registerItem("chameleon_spawn_egg", new SpawnEggItem(ModEntities.CHAMELEON, 0xFFEB3B, 0x4CAF50, new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);

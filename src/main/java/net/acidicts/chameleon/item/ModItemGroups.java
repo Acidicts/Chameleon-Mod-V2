@@ -19,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHAMELEON);
                         entries.add(ModItems.CHAMELEON_EGG);
+                        entries.add(ModItems.CHAMELEON_SPAWN_EGG);
+
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);
                         entries.add(ModBlocks.INCUBATOR);
