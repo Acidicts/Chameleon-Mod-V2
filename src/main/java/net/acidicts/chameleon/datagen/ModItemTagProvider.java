@@ -1,6 +1,6 @@
 package net.acidicts.chameleon.datagen;
 
-import net.acidicts.chameleon.items.ModItems;
+import net.acidicts.chameleon.item.ModItems;
 import net.acidicts.chameleon.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;

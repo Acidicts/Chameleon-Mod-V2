@@ -1,4 +1,4 @@
-package net.acidicts.chameleon.items;
+package net.acidicts.chameleon.item;
 
 import net.acidicts.chameleon.ChameleonMod;
 import net.acidicts.chameleon.block.ModBlocks;

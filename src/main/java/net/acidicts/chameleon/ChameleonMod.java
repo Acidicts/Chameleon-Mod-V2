@@ -1,8 +1,10 @@
 package net.acidicts.chameleon;
 
 import net.acidicts.chameleon.block.ModBlocks;
-import net.acidicts.chameleon.items.ModItemGroups;
-import net.acidicts.chameleon.items.ModItems;
+import net.acidicts.chameleon.block.entity.ModBlockEntities;
+import net.acidicts.chameleon.item.ModItemGroups;
+import net.acidicts.chameleon.item.ModItems;
+import net.acidicts.chameleon.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,9 +21,14 @@ public class ChameleonMod implements ModInitializer {
         LOGGER.info(MOD_INFO);
 
         ModItemGroups.registerItemGroups();
+
         ModItems.registerItems();
         ModBlocks.registerBlocks();
 
+        ModBlockEntities.registerBlockEntities();
+        ModScreenHandlers.registerScreenHandlers();
+
         LOGGER.info(MOD_ID + " Initialized!");
+
 	}
 }

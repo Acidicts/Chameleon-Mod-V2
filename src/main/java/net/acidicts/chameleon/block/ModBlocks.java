@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 
-import static net.acidicts.chameleon.items.ModItems.formatRegistryName;
+import static net.acidicts.chameleon.item.ModItems.formatRegistryName;
 
 public class ModBlocks {
 

@@ -1,6 +1,6 @@
 package net.acidicts.chameleon.datagen;
 
-import net.acidicts.chameleon.items.ModItems;
+import net.acidicts.chameleon.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
