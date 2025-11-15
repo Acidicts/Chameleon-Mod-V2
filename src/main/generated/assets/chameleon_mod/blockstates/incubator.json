@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chameleon_mod:block/incubator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chameleon_mod:block/incubator"
+    },
+    "facing=south": {
+      "model": "chameleon_mod:block/incubator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chameleon_mod:block/incubator",
+      "y": 270
+    }
+  }
+}

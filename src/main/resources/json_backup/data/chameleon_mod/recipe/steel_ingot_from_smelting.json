@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "chameleon_mod:steel_dust"
-  },
-  "result": "chameleon_mod:steel_ingot",
-  "experience": 0.15,
-  "cookingtime": 300
-}
