@@ -17,7 +17,9 @@ public class ModItems {
     public static final Item CHAMELEON_EGG = registerItem("chameleon_egg", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_DUST = registerItem("steel_dust", new Item(new Item.Settings()));
-    public static final Item CHAMELEON_SPAWN_EGG = registerItem("chameleon_spawn_egg", new SpawnEggItem(ModEntities.CHAMELEON, 0xFFEB3B, 0x4CAF50, new Item.Settings().maxCount(16)));
+
+    public static final Item CHAMELEON_SPAWN_EGG = registerItem("chameleon_spawn_egg", new SpawnEggItem(ModEntities.CHAMELEON,
+            0x4CAF50, 0xFFEB3B, new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
