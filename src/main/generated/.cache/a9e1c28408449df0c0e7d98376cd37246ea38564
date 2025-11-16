@@ -1,8 +1,10 @@
-// 1.21.1	2025-11-15T23:45:17.4758368	Chameleon Mod/Model Definitions
+// 1.21.1	2025-11-16T13:08:46.6656991	Chameleon Mod/Model Definitions
+f781ed74f319c58d70b9e80c353a81bd9b185c9c assets\chameleon_mod\models\item\capture_chameleon.json
 90cf0f946e67b31fd35b1d21e0474e6ca4d69107 assets\chameleon_mod\models\item\steel_dust.json
 465662af6a7b9fd27659b4992ddee84257a90743 assets\chameleon_mod\models\item\incubator.json
 aa2ea3a8eba8517d0ab4ecb8bf0dd0b804e03d22 assets\chameleon_mod\models\item\chameleon.json
 8c7f9cf35761deb7659a67595869f22a56996bfa assets\chameleon_mod\blockstates\incubator.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\chameleon_mod\models\item\chameleon_spawn_egg.json
+1ea0f5e4655082545bb229f1b78a0ec2f6e5cf2e assets\chameleon_mod\models\item\chameleon_capturer_filled.json
 f8db1d8f3819fae77087ef3efecfb150f5754f11 assets\chameleon_mod\models\item\chameleon_egg.json
 143a29bc334fe3d6279f87ac1c3a04fab8e1df36 assets\chameleon_mod\models\item\steel_ingot.json

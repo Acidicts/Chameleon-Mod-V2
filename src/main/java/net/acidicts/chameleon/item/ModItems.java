@@ -2,6 +2,7 @@ package net.acidicts.chameleon.item;
 
 import net.acidicts.chameleon.ChameleonMod;
 import net.acidicts.chameleon.entity.ModEntities;
+import net.acidicts.chameleon.item.items.ChameleonCapturer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,6 +18,7 @@ public class ModItems {
     public static final Item CHAMELEON_EGG = registerItem("chameleon_egg", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_DUST = registerItem("steel_dust", new Item(new Item.Settings()));
+    public static final Item CAPTURE_CHAMELEON = registerItem("capture_chameleon", new ChameleonCapturer(new Item.Settings().maxCount(1)));
 
     public static final Item CHAMELEON_SPAWN_EGG = registerItem("chameleon_spawn_egg", new SpawnEggItem(ModEntities.CHAMELEON,
             0x4CAF50, 0xFFEB3B, new Item.Settings().maxCount(16)));

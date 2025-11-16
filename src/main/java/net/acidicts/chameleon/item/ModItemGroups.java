@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CHAMELEON_EGG);
                         entries.add(ModItems.CHAMELEON_SPAWN_EGG);
 
+                        entries.add(ModItems.CAPTURE_CHAMELEON);
+
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);
                         entries.add(ModBlocks.INCUBATOR);
