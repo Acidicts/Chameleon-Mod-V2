@@ -8,6 +8,7 @@ import net.acidicts.chameleon.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -29,6 +30,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHAMELEON_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE, Models.GENERATED);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_BOOTS));
 
         itemModelGenerator.register(ModItems.CHAMELEON_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));

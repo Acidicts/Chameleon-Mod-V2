@@ -5,6 +5,7 @@ import net.acidicts.chameleon.block.entity.ModBlockEntities;
 import net.acidicts.chameleon.entity.ModEntities;
 import net.acidicts.chameleon.item.ModItemGroups;
 import net.acidicts.chameleon.item.ModItems;
+import net.acidicts.chameleon.recipe.ModRecipes;
 import net.acidicts.chameleon.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,6 +31,8 @@ public class ChameleonMod implements ModInitializer {
         ModScreenHandlers.registerScreenHandlers();
 
         ModEntities.registerEntities();
+
+        ModRecipes.registerRecipes();
 
         LOGGER.info(MOD_ID + " Initialized!");
 

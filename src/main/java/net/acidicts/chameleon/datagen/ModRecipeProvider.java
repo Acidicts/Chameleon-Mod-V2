@@ -1,5 +1,6 @@
 package net.acidicts.chameleon.datagen;
 
+import net.acidicts.chameleon.ChameleonMod;
 import net.acidicts.chameleon.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -37,5 +39,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.JUNGLE_SAPLING), conditionsFromItem(Items.JUNGLE_SAPLING))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_INGOT)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .input('#', Items.CHARCOAL)
+                .input('E', Items.IRON_INGOT)
+                .criterion(hasItem(Items.JUNGLE_SAPLING), conditionsFromItem(Items.JUNGLE_SAPLING))
+                .offerTo(exporter);
+
+        // Special recipe for chameleon capturer filling
+        offerSpecialRecipe(exporter, Identifier.of(ChameleonMod.MOD_ID, "chameleon_capturer_filling"));
+
+    }
+
+    private void offerSpecialRecipe(RecipeExporter exporter, Identifier recipeId) {
+        net.acidicts.chameleon.recipe.ChameleonCapturerFillingRecipe recipe =
+                new net.acidicts.chameleon.recipe.ChameleonCapturerFillingRecipe(
+                        net.minecraft.recipe.book.CraftingRecipeCategory.MISC);
+        exporter.accept(recipeId, recipe, null);
     }
 }

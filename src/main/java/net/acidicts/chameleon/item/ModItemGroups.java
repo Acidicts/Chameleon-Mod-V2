@@ -23,6 +23,12 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CAPTURE_CHAMELEON);
 
+                        entries.add(ModItems.CHAMELEON_SCALE);
+                        entries.add(ModItems.CHAMELEON_SCALE_HELMET);
+                        entries.add(ModItems.CHAMELEON_SCALE_CHESTPLATE);
+                        entries.add(ModItems.CHAMELEON_SCALE_LEGGINGS);
+                        entries.add(ModItems.CHAMELEON_SCALE_BOOTS);
+
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);
                         entries.add(ModBlocks.INCUBATOR);
