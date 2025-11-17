@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jungle_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:jungle_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chameleon_mod:steel_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jungle_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chameleon_mod:steel_ingot"
+    ]
+  }
+}
