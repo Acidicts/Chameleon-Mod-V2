@@ -5,6 +5,9 @@
 	"mixins": [
 		"ExampleMixin"
 	],
+	"client": [
+		"ArmorFeatureRendererMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},

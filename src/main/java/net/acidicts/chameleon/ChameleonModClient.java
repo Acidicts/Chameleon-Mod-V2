@@ -24,13 +24,13 @@ public class ChameleonModClient implements ClientModInitializer {
     private void registerModelPredicates() {
         // Register predicate for ChameleonCapturer to change texture based on whether it has a chameleon
         ModelPredicateProviderRegistry.register(ModItems.CAPTURE_CHAMELEON,
-            Identifier.of(ChameleonMod.MOD_ID, "filled"),
-            (stack, world, entity, seed) -> {
-                if (!stack.contains(DataComponentTypes.CUSTOM_DATA)) {
-                    return 0.0f;
-                }
-                NbtComponent nbtComponent = stack.getOrDefault(DataComponentTypes.CUSTOM_DATA, NbtComponent.DEFAULT);
-                return nbtComponent.copyNbt().contains("Chameleon") ? 1.0f : 0.0f;
-            });
+                Identifier.of(ChameleonMod.MOD_ID, "filled"),
+                (stack, world, entity, seed) -> {
+                    if (!stack.contains(DataComponentTypes.CUSTOM_DATA)) {
+                        return 0.0f;
+                    }
+                    NbtComponent nbtComponent = stack.getOrDefault(DataComponentTypes.CUSTOM_DATA, NbtComponent.DEFAULT);
+                    return nbtComponent.copyNbt().contains("Chameleon") ? 1.0f : 0.0f;
+                });
     }
 }

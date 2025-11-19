@@ -3,6 +3,7 @@ package net.acidicts.chameleon.item;
 import net.acidicts.chameleon.ChameleonMod;
 import net.acidicts.chameleon.entity.ModEntities;
 import net.acidicts.chameleon.item.items.ChameleonCapturer;
+import net.acidicts.chameleon.item.items.ChameleonScaleArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -27,17 +28,17 @@ public class ModItems {
 
 
     public static final Item CHAMELEON_SCALE_HELMET = registerItem("chameleon_scale_helmet",
-            new ArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Settings().maxCount(ArmorItem.Type.HELMET.getMaxDamage(20))));
+            new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).maxCount(1)));
     public static final Item CHAMELEON_SCALE_CHESTPLATE = registerItem("chameleon_scale_chestplate",
-            new ArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Settings().maxCount(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));
+            new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).maxCount(1)));
     public static final Item CHAMELEON_SCALE_LEGGINGS = registerItem("chameleon_scale_leggings",
-            new ArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Settings().maxCount(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
+            new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).maxCount(1)));
     public static final Item CHAMELEON_SCALE_BOOTS = registerItem("chameleon_scale_boots",
-            new ArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Settings().maxCount(ArmorItem.Type.BOOTS.getMaxDamage(20))));
+            new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
