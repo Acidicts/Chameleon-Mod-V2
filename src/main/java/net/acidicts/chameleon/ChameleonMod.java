@@ -8,6 +8,7 @@ import net.acidicts.chameleon.item.ModItems;
 import net.acidicts.chameleon.recipe.ModRecipes;
 import net.acidicts.chameleon.screen.ModScreenHandlers;
 import net.acidicts.chameleon.util.HammerUsageEvent;
+import net.acidicts.chameleon.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -33,8 +34,10 @@ public class ChameleonMod implements ModInitializer {
         ModScreenHandlers.registerScreenHandlers();
 
         ModEntities.registerEntities();
+        ModWorldGeneration.generateModWorldGen();
 
         ModRecipes.registerRecipes();
+
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
