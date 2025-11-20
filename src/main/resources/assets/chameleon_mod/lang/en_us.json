@@ -1,5 +1,6 @@
 {
   "item.chameleon_mod.chameleon" : "Chameleon",
+  "item.chameleon_mod.cooked_chameleon" : "Roasted Chameleon",
   "item.chameleon_mod.chameleon_egg" : "Chameleon Egg",
   "item.chameleon_mod.steel_ingot" : "Steel Ingot",
   "item.chameleon_mod.chameleon_spawn_egg" : "Chameleon Spawn Egg",
@@ -11,6 +12,12 @@
   "item.chameleon_mod.chameleon_scale_chestplate": "Chameleon Chestplate",
   "item.chameleon_mod.chameleon_scale_leggings": "Chameleon Leggings",
   "item.chameleon_mod.chameleon_scale_boots": "Chameleon Boots",
+
+  "item.chameleon_mod.chameleon_scale_sword": "Chameleon Sword",
+  "item.chameleon_mod.chameleon_scale_pickaxe": "Chameleon Pickaxe",
+  "item.chameleon_mod.chameleon_scale_axe": "Chameleon Axe",
+  "item.chameleon_mod.chameleon_scale_shovel": "Chameleon Shovel",
+  "item.chameleon_mod.chameleon_scale_hoe": "Chameleon Hoe",
 
   "itemgroup.chameleon_mod.chameleon_mod": "Chameleon",
 

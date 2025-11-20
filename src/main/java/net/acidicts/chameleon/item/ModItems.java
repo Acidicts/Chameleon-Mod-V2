@@ -5,10 +5,7 @@ import net.acidicts.chameleon.entity.ModEntities;
 import net.acidicts.chameleon.item.items.ChameleonCapturer;
 import net.acidicts.chameleon.item.items.ChameleonScaleArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -26,6 +23,7 @@ public class ModItems {
     public static final Item CHAMELEON_SPAWN_EGG = registerItem("chameleon_spawn_egg", new SpawnEggItem(ModEntities.CHAMELEON,
             0x4CAF50, 0xFFEB3B, new Item.Settings().maxCount(16)));
 
+    public static final Item COOKED_CHAMELEON = registerItem("cooked_chameleon", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CHAMELEON)));
 
     public static final Item CHAMELEON_SCALE_HELMET = registerItem("chameleon_scale_helmet",
             new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.HELMET,
@@ -39,6 +37,22 @@ public class ModItems {
     public static final Item CHAMELEON_SCALE_BOOTS = registerItem("chameleon_scale_boots",
             new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).maxCount(1)));
+
+    public static final Item CHAMELEON_SCALE_SWORD = registerItem("chameleon_scale_sword",
+            new SwordItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 3, -2.4f))));
+    public static final Item CHAMELEON_SCALE_PICKAXE = registerItem("chameleon_scale_pickaxe",
+            new PickaxeItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 1, -2.8f))));
+    public static final Item CHAMELEON_SCALE_AXE = registerItem("chameleon_scale_axe",
+            new AxeItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 6, -3.2f))));
+    public static final Item CHAMELEON_SCALE_SHOVEL = registerItem("chameleon_scale_shovel",
+            new ShovelItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 3, -3f))));
+    public static final Item CHAMELEON_SCALE_HOE = registerItem("chameleon_scale_hoe",
+            new HoeItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 3, -3f))));
 
     private static Item registerItem(String name, Item item) {
         Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);
@@ -69,10 +83,5 @@ public class ModItems {
 
     public static void registerItems() {
         ChameleonMod.LOGGER.info("Registering Items for " + ChameleonMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.add(CHAMELEON));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> entries.add(CHAMELEON_EGG));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(STEEL_INGOT));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(STEEL_DUST));
     }
 }

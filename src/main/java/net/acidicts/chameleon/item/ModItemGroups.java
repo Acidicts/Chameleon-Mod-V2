@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.chameleon_mod.chameleon_mod"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHAMELEON);
+                        entries.add(ModItems.COOKED_CHAMELEON);
+
                         entries.add(ModItems.CHAMELEON_EGG);
                         entries.add(ModItems.CHAMELEON_SPAWN_EGG);
 
@@ -28,6 +30,12 @@ public class ModItemGroups {
                         entries.add(ModItems.CHAMELEON_SCALE_CHESTPLATE);
                         entries.add(ModItems.CHAMELEON_SCALE_LEGGINGS);
                         entries.add(ModItems.CHAMELEON_SCALE_BOOTS);
+
+                        entries.add(ModItems.CHAMELEON_SCALE_SWORD);
+                        entries.add(ModItems.CHAMELEON_SCALE_PICKAXE);
+                        entries.add(ModItems.CHAMELEON_SCALE_AXE);
+                        entries.add(ModItems.CHAMELEON_SCALE_SHOVEL);
+                        entries.add(ModItems.CHAMELEON_SCALE_HOE);
 
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);

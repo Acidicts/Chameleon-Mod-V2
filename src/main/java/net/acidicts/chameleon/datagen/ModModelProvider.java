@@ -27,6 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CHAMELEON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_CHAMELEON, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHAMELEON_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
@@ -36,6 +37,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_BOOTS));
+
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.CHAMELEON_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
