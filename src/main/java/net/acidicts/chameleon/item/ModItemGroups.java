@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CHAMELEON_SCALE_SHOVEL);
                         entries.add(ModItems.CHAMELEON_SCALE_HOE);
 
+                        entries.add(ModItems.CHAMELEON_SCALE_HAMMER);
+
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.STEEL_DUST);
                         entries.add(ModBlocks.INCUBATOR);

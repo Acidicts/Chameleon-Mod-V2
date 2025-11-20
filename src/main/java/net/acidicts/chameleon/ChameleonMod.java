@@ -7,8 +7,10 @@ import net.acidicts.chameleon.item.ModItemGroups;
 import net.acidicts.chameleon.item.ModItems;
 import net.acidicts.chameleon.recipe.ModRecipes;
 import net.acidicts.chameleon.screen.ModScreenHandlers;
+import net.acidicts.chameleon.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,6 +35,8 @@ public class ChameleonMod implements ModInitializer {
         ModEntities.registerEntities();
 
         ModRecipes.registerRecipes();
+
+        PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
         LOGGER.info(MOD_ID + " Initialized!");
 

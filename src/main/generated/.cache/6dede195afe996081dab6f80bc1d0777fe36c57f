@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-20T20:00:08.1431873	Chameleon Mod/Tags for minecraft:item
+// 1.21.1	2025-11-20T21:15:02.2387459	Chameleon Mod/Tags for minecraft:item
 9af22931ba07d5c21fd5d48ed90beba34f39b1c6 data\minecraft\tags\item\axes.json
 41c84c653671fe92f8591c4e745dd84c48ee12c4 data\minecraft\tags\item\hoes.json
 022e1f88765ab637116d680fe18190758f82db58 data\minecraft\tags\item\enchantable\leg_armor.json
@@ -7,9 +7,9 @@
 1fbf15643e603f9d5a1c27a4a862e5d510a801fd data\minecraft\tags\item\enchantable\foot_armor.json
 42117144ebe6ac9d985aac418ab53969bc3d9d52 data\minecraft\tags\item\trimmable_armor.json
 a44b6d0a546c3ef891111ff545aad309887bbac8 data\minecraft\tags\item\pickaxes.json
-9140f50573179d8ca6b9b3aea85b10a1a291fd3a data\minecraft\tags\item\enchantable\durability.json
+03b99830f79918b3b9289c1badc798265f822a94 data\minecraft\tags\item\enchantable\durability.json
 f1d6431b607cf9b36b2202d63b4a820c2caf7da3 data\minecraft\tags\item\shovels.json
-3e76193de73126b75def9445877f4e09923a2d34 data\minecraft\tags\item\enchantable\mining.json
+c86ab3585f0637ca3a33d7a925ba8021a7975a20 data\minecraft\tags\item\enchantable\mining.json
 42117144ebe6ac9d985aac418ab53969bc3d9d52 data\minecraft\tags\item\enchantable\armor.json
 a44b6d0a546c3ef891111ff545aad309887bbac8 data\minecraft\tags\item\enchantable\mining_loot.json
 1cee33b2790f55d38ff31f5c3a093546c2c5ae66 data\minecraft\tags\item\enchantable\head_armor.json

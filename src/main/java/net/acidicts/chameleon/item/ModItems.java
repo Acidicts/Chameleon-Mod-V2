@@ -2,6 +2,7 @@ package net.acidicts.chameleon.item;
 
 import net.acidicts.chameleon.ChameleonMod;
 import net.acidicts.chameleon.entity.ModEntities;
+import net.acidicts.chameleon.item.custom.HammerItem;
 import net.acidicts.chameleon.item.items.ChameleonCapturer;
 import net.acidicts.chameleon.item.items.ChameleonScaleArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -53,6 +54,10 @@ public class ModItems {
     public static final Item CHAMELEON_SCALE_HOE = registerItem("chameleon_scale_hoe",
             new HoeItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 3, -3f))));
+
+    public static final Item CHAMELEON_SCALE_HAMMER = registerItem("chameleon_scale_hammer",
+            new HammerItem(ModToolMaterials.CHAMELEON_SCALE, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CHAMELEON_SCALE, 7, -3.4f))));
 
     private static Item registerItem(String name, Item item) {
         Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(ChameleonMod.MOD_ID, name), item);

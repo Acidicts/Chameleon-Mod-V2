@@ -44,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHAMELEON_SCALE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHAMELEON_SCALE_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE_HAMMER, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.CHAMELEON_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
 

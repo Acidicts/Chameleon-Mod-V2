@@ -70,13 +70,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.CHAMELEON_SCALE_PICKAXE)
                 .add(ModItems.CHAMELEON_SCALE_AXE)
                 .add(ModItems.CHAMELEON_SCALE_SHOVEL)
-                .add(ModItems.CHAMELEON_SCALE_HOE);
+                .add(ModItems.CHAMELEON_SCALE_HOE)
+                .add(ModItems.CHAMELEON_SCALE_HAMMER);
 
         getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
                 .add(ModItems.CHAMELEON_SCALE_PICKAXE)
                 .add(ModItems.CHAMELEON_SCALE_AXE)
                 .add(ModItems.CHAMELEON_SCALE_SHOVEL)
-                .add(ModItems.CHAMELEON_SCALE_HOE);
+                .add(ModItems.CHAMELEON_SCALE_HOE)
+                .add(ModItems.CHAMELEON_SCALE_HAMMER);
 
         getOrCreateTagBuilder(ItemTags.MINING_LOOT_ENCHANTABLE)
                 .add(ModItems.CHAMELEON_SCALE_PICKAXE);

@@ -8,6 +8,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
@@ -28,6 +29,7 @@ import org.jetbrains.annotations.Nullable;
 public class ChameleonEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    private int invisibleTimeout = 0;
 
     private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
             DataTracker.registerData(ChameleonEntity.class, TrackedDataHandlerRegistry.INTEGER);
@@ -37,10 +39,17 @@ public class ChameleonEntity extends AnimalEntity {
     }
 
     @Override
+    public void onDamaged(DamageSource damageSource) {
+        this.setInvisible(true);
+        this.invisibleTimeout = 40;
+        super.onDamaged(damageSource);
+    }
+
+    @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
 
-        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.25));
+        this.goalSelector.add(1, new EscapeDangerGoal(this, 2.0));
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.0));
 
         this.goalSelector.add(4, new TemptGoal(this, 1.2, stack -> stack.isOf(Items.SWEET_BERRIES), false));
@@ -76,6 +85,12 @@ public class ChameleonEntity extends AnimalEntity {
 
         if (this.getWorld().isClient()) {
             this.setupAnimationStates();
+        }
+
+        if (this.invisibleTimeout <= 0) {
+            this.setInvisible(false);
+        } else {
+            --this.invisibleTimeout;
         }
     }
 

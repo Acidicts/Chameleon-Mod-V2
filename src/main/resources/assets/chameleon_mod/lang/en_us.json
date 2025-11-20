@@ -8,16 +8,18 @@
   "item.chameleon_mod.chameleon_scale": "Chameleon Scale",
   "item.chameleon_mod.steel_dust": "Steel Dust",
 
-  "item.chameleon_mod.chameleon_scale_helmet": "Chameleon Helmet",
-  "item.chameleon_mod.chameleon_scale_chestplate": "Chameleon Chestplate",
-  "item.chameleon_mod.chameleon_scale_leggings": "Chameleon Leggings",
-  "item.chameleon_mod.chameleon_scale_boots": "Chameleon Boots",
+  "item.chameleon_mod.chameleon_scale_helmet": "Chameleon Scale Helmet",
+  "item.chameleon_mod.chameleon_scale_chestplate": "Chameleon Scale Chestplate",
+  "item.chameleon_mod.chameleon_scale_leggings": "Chameleon Scale Leggings",
+  "item.chameleon_mod.chameleon_scale_boots": "Chameleon Scale Boots",
 
-  "item.chameleon_mod.chameleon_scale_sword": "Chameleon Sword",
-  "item.chameleon_mod.chameleon_scale_pickaxe": "Chameleon Pickaxe",
-  "item.chameleon_mod.chameleon_scale_axe": "Chameleon Axe",
-  "item.chameleon_mod.chameleon_scale_shovel": "Chameleon Shovel",
-  "item.chameleon_mod.chameleon_scale_hoe": "Chameleon Hoe",
+  "item.chameleon_mod.chameleon_scale_sword": "Chameleon Scale Sword",
+  "item.chameleon_mod.chameleon_scale_pickaxe": "Chameleon Scale Pickaxe",
+  "item.chameleon_mod.chameleon_scale_axe": "Chameleon Scale Axe",
+  "item.chameleon_mod.chameleon_scale_shovel": "Chameleon Scale Shovel",
+  "item.chameleon_mod.chameleon_scale_hoe": "Chameleon Scale Hoe",
+
+  "item.chameleon_mod.chameleon_scale_hammer": "Chameleon Scale Hammer",
 
   "itemgroup.chameleon_mod.chameleon_mod": "Chameleon",
 
