@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chameleon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chameleon_mod:chameleon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chameleon_mod:cooked_chameleon_from_smelting_chameleon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chameleon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chameleon_mod:cooked_chameleon_from_smelting_chameleon"
+    ]
+  }
+}

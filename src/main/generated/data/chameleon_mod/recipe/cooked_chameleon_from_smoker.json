@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "chameleon_mod:chameleon"
+  },
+  "result": {
+    "id": "chameleon_mod:cooked_chameleon"
+  }
+}

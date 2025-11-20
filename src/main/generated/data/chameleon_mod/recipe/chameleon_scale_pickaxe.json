@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "chameleon_mod:chameleon_scale"
+    },
+    "E": {
+      "item": "minecraft:iron_pickaxe"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chameleon_mod:chameleon_scale_pickaxe"
+  }
+}

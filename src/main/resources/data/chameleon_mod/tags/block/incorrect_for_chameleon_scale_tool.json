@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ],
+  "remove": [
+    "#chameleon_mod:incorrect_for_chameleon_scale_tool"
+  ]
+}

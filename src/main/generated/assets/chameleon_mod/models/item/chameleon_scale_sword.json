@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "chameleon_mod:item/chameleon_scale_sword"
+  }
+}

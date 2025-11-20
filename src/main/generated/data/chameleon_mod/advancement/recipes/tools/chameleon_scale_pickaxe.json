@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chameleon_scale": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chameleon_mod:chameleon_scale"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chameleon_mod:chameleon_scale_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chameleon_scale"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chameleon_mod:chameleon_scale_pickaxe"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "cooked_chameleon_from_smelting",
+  "ingredient": {
+    "item": "chameleon_mod:chameleon"
+  },
+  "result": {
+    "id": "chameleon_mod:cooked_chameleon"
+  }
+}
