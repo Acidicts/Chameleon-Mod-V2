@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHAMELEON);
                         entries.add(ModItems.COOKED_CHAMELEON);
+                        entries.add(ModItems.GOLDEN_CHAMELEON);
 
                         entries.add(ModItems.CHAMELEON_EGG);
                         entries.add(ModItems.CHAMELEON_SPAWN_EGG);

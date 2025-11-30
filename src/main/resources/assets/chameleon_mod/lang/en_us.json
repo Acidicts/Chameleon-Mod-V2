@@ -1,11 +1,14 @@
 {
   "item.chameleon_mod.chameleon" : "Chameleon",
   "item.chameleon_mod.cooked_chameleon" : "Roasted Chameleon",
+  "item.chameleon_mod.golden_chameleon" : "Golden Chameleon",
+
   "item.chameleon_mod.chameleon_egg" : "Chameleon Egg",
-  "item.chameleon_mod.steel_ingot" : "Steel Ingot",
   "item.chameleon_mod.chameleon_spawn_egg" : "Chameleon Spawn Egg",
   "item.chameleon_mod.capture_chameleon": "Chameleon Capture Device",
   "item.chameleon_mod.chameleon_scale": "Chameleon Scale",
+
+  "item.chameleon_mod.steel_ingot" : "Steel Ingot",
   "item.chameleon_mod.steel_dust": "Steel Dust",
 
   "item.chameleon_mod.chameleon_scale_helmet": "Chameleon Scale Helmet",

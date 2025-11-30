@@ -28,10 +28,13 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CHAMELEON, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_CHAMELEON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_CHAMELEON, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CHAMELEON_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHAMELEON_SCALE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.STEEL_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHAMELEON_SCALE, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHAMELEON_SCALE_CHESTPLATE));

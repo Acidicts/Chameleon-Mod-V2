@@ -25,6 +25,7 @@ public class ModItems {
             0x4CAF50, 0xFFEB3B, new Item.Settings().maxCount(16)));
 
     public static final Item COOKED_CHAMELEON = registerItem("cooked_chameleon", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CHAMELEON)));
+    public static final Item GOLDEN_CHAMELEON = registerItem("golden_chameleon", new Item(new Item.Settings().food(ModFoodComponents.GOLDEN_CHAMELEON)));
 
     public static final Item CHAMELEON_SCALE_HELMET = registerItem("chameleon_scale_helmet",
             new ChameleonScaleArmorItem(ModArmorMaterials.CHAMELEON_SCALE_ARMOUR_MATERIAL, ArmorItem.Type.HELMET,

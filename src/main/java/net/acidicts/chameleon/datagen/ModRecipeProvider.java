@@ -1,6 +1,7 @@
 package net.acidicts.chameleon.datagen;
 
 import net.acidicts.chameleon.ChameleonMod;
+import net.acidicts.chameleon.block.ModBlocks;
 import net.acidicts.chameleon.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -8,7 +9,6 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.AbstractCookingRecipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SmokingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -37,6 +37,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFoodCookingRecipe(exporter, "smoker", RecipeSerializer.SMOKING,
                 SmokingRecipe::new, 100, ModItems.CHAMELEON, ModItems.COOKED_CHAMELEON, 0.35F);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GOLDEN_CHAMELEON)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .input('#', Items.GOLD_INGOT)
+                .input('E', ModItems.COOKED_CHAMELEON)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHAMELEON_EGG)
                 .pattern("###")
                 .pattern("#E#")
@@ -53,6 +62,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.CHARCOAL)
                 .input('E', Items.IRON_INGOT)
                 .criterion(hasItem(Items.JUNGLE_SAPLING), conditionsFromItem(Items.JUNGLE_SAPLING))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CAPTURE_CHAMELEON)
+                .pattern(" # ")
+                .pattern("#E#")
+                .pattern(" # ")
+                .input('#', ModItems.STEEL_INGOT)
+                .input('E', Items.ENDER_EYE)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.INCUBATOR)
+                .pattern("###")
+                .pattern("#E#")
+                .pattern("###")
+                .input('#', ModItems.STEEL_INGOT)
+                .input('E', ModItems.CHAMELEON_EGG)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter);
 
         // Special recipe for chameleon capturer filling
